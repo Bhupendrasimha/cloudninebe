@@ -5,8 +5,8 @@ services:
         ports:
             - "27018:27017"
         environment:
-            MONGO_INITDB_ROOT_USERNAME: username
-            MONGO_INITDB_ROOT_PASSWORD: password
+            MONGO_INITDB_ROOT_USERNAME: srividya
+            MONGO_INITDB_ROOT_PASSWORD: srividya
         volumes:
             - ./data:/home
     redis:

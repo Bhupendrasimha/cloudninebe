@@ -2,6 +2,8 @@ import mongoose from 'mongoose';
 import { MongoMemoryServer } from 'mongodb-memory-server';
 
 export const connection = (connectionString: string) => {
+  // mongoose.set('debug',true)
+  mongoose.set('strictQuery', true);
   return mongoose.connect(`${connectionString}`);
 };
 

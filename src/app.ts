@@ -7,7 +7,8 @@ import { RedisClient } from './utils/redis.utils';
 const app = init();
 
 const PORT = process.env.PORT || '3000';
-
+console.log(process.env.PORT)
+console.log(process.env.DB_URI)
 connection(`${process.env.DB_URI}`)
   .then(async () => {
     await RedisClient.connect();
