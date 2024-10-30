@@ -1,3 +1,4 @@
+import { required } from 'joi';
 import mongoose from 'mongoose';
 
 const schema = new mongoose.Schema(
@@ -7,10 +8,11 @@ const schema = new mongoose.Schema(
     date: { type: String, required: true },
     number: { type: String, required: true },
     time: { type: String, required: true },
-    hospital:{
-      type: String, required: true 
-    }
-
+    hospital: {
+      type: String,
+      required: true,
+    },
+    reason: { type: String, required: true },
   },
   {
     timestamps: true,

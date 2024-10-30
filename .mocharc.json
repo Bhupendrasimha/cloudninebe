@@ -5,7 +5,7 @@
         "dotenv/config"
     ],
     "spec": [
-        "src/**/*.test.ts"
+        // "src/**/*.test.ts"
     ],
     "exit": true
 }

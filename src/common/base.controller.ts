@@ -109,4 +109,13 @@ export abstract class BaseController {
       ErrorResponse(res, error);
     }
   };
+  deleteAll = async (req: Request, res: Response) => {
+    try {
+      const response = await this.processor.deleteAll({});
+      if (!response.deletedCount) throw customError(NOT_FOUND);
+      SuccessResponse(res, null, 204);
+    } catch (error) {
+      ErrorResponse(res, error);
+    }
+  };
 }

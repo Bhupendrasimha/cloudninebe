@@ -82,4 +82,10 @@ export abstract class BaseProcessor {
     const result = await this.repo.deleteOne(query);
     return result;
   };
+  deleteAll = async () => {
+    const result = await this.repo.deleteMany({});
+    return result;
+  }
+  
+
 }

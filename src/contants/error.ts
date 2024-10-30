@@ -9,6 +9,17 @@ export const NOT_FOUND = {
   code: 404,
   customCode: 4012,
 };
+export const NO_RECORDS_FOUND = {
+  message: 'No records found ',
+  code: 404,
+  customCode: 4018,
+};
+export const FILE_CREATION_FAILED = {
+message: 'FILE create is falied  ',
+code: 501,
+customCode: 4019,
+};
+
 
 export const OTP_EXPIRED = {
   message: 'OTP Expired',

@@ -37,5 +37,16 @@ AppointmentRouter.delete(
   Validate({ p: idValidator }),
   Controller.delete
 );
+AppointmentRouter.delete(
+  '/',
+  // isAuthenticated,
+
+  Controller.deleteAll
+);
+
+AppointmentRouter.get('/csv',  Controller.downloadAllData);
+
+
+
 
 export { AppointmentRouter };

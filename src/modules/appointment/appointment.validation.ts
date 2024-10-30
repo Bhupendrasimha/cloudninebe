@@ -7,7 +7,8 @@ export const createExampleValidation = joi.object({
   date:stringRequired,
   number:stringRequired,
   time:stringRequired,
-  hospital:stringRequired
+  hospital:stringRequired,
+  reason:stringRequired
 });
 
 export const updateExampleValidation = joi.object({
@@ -20,6 +21,7 @@ export const updateExampleValidation = joi.object({
     date:stringRequired,
     number:stringRequired,
     time:stringRequired,
-    hospital:stringRequired
+    hospital:stringRequired,
+    reason:stringRequired
   }),
 });
